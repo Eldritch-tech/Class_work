@@ -1,0 +1,23 @@
+# Fidel Castro SCT211-0100/2022
+# Display a menu of operations
+print("Select operation:")
+print("1. Add")
+print("2. Subtract")
+
+# User input for operation choice
+choice = input("Enter choice (1/2): ")
+
+# Check if the choice is valid
+if choice not in ['1', '2']:
+    print("Invalid choice")
+else:
+    # Input from the user
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if choice == '1':
+        result = num1 + num2
+        print("Sum: ", result)
+    elif choice == '2':
+        result = num1 - num2
+        print("Difference: ", result)
